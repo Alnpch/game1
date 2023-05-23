@@ -1,0 +1,87 @@
+@font-face {
+
+    font-family: "StratosSkyeng";
+  
+    src: url(/fonts/stratosskyengweb-regular.woff2);
+  
+  }
+body{
+    font-family: "StratosSkyeng";
+width: 1024px;
+height: 774px;
+background: #004980;
+}
+
+.box{
+width: 480px;
+height: 459px;
+left: 272px;
+top: 158px;
+
+background: #C2F5FF;
+border-radius: 12px;
+margin-left: 450px;
+margin-top: 158px;
+}
+.heading{
+width: 208px;
+height: 96px;
+padding-top: 52px;
+padding-left: 136px;
+padding-right: 136px;
+font-family: 'StratosSkyeng';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #004980;
+}
+.box_button{
+display: flex;
+flex-direction: row;
+gap: 24px;
+padding-left: 69px;
+}
+.button{
+width: 98px;
+height: 98px;
+left: 341px;
+top: 354px;
+
+background: #FFFFFF;
+border-radius: 12px;
+font-family: 'StratosSkyeng';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 72px;
+
+align-items: center;
+text-align: center;
+color: #0080C1;
+border: none;
+}
+.button_start{
+margin-left: 117px;
+width: 246px;
+height: 50px;
+
+background: #7AC100;
+border-radius: 12px;
+border: none;
+font-family: 'StratosSkyeng';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+margin-top:  67px;
+align-items: center;
+text-align: center;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #FFFFFF;
+
+}
