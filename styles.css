@@ -2,7 +2,7 @@
 
     font-family: "StratosSkyeng";
   
-    src: url(/fonts/stratosskyengweb-regular.woff2);
+    src: url("./fonts/stratosskyengweb-regular.woff2");
   
   }
 body{
@@ -11,7 +11,10 @@ width: 1024px;
 height: 774px;
 background: #004980;
 }
-
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
 .box{
 width: 480px;
 height: 459px;
@@ -44,24 +47,41 @@ flex-direction: row;
 gap: 24px;
 padding-left: 69px;
 }
-.button{
-width: 98px;
-height: 98px;
-left: 341px;
-top: 354px;
+.box_button input[type="radio"]:checked+label {
+    background-color: #abbfec;
+    border: 1px solid #4156be;
+}
+.box_button label:hover {
+    background-color: #abbfec;
+    border: 1px solid #4156be;
+}
+button{
+	display: inline-block;
+}
+.button input[type=radio]{
+display: none;
+}
 
-background: #FFFFFF;
-border-radius: 12px;
-font-family: 'StratosSkyeng';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 72px;
-
-align-items: center;
-text-align: center;
-color: #0080C1;
-border: none;
+.button label {
+display: flex;
+    cursor: pointer;
+    line-height: 34px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 98px;
+    height: 98px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #0080C1;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
 }
 .button_start{
 margin-left: 117px;
