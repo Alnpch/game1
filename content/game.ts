@@ -21,24 +21,8 @@ export const startGame = (difficult: string) => {
   const suitsBackground: suitsBackgroundType = {
     "♠": "pik.svg",
     "♣": "krest.svg",
-    "♥": "che.svg",
+    "♥": "che.svg", 
     "♦": "bub.svg",
-  //   switch (suit.charAt(0)) {
-  //     case "♠":
-  //       suit= "./cards/pik.svg";
-  //         break;
-  //     case "♥":
-  //       suit = "./cards/che.svg";
-  //         break;
-  //     case "♦":
-  //       suit= "./cards/bub.svg";
-  //         break;
-  //     case "♣":
-  //       suit= "./cards/krest.svg";
-  //         break;
-  //     default:
-  //         break;
-  // }
   };
 
   // рендер
@@ -59,24 +43,22 @@ export const startGame = (difficult: string) => {
         card.suit
       } class="game-table__card" >
      
-          <div class="card__face" style="background: url(./cards/${
+          <div class="card__face" style="background: url(./dist/cards/${
             suitsBackground[card.suit]
           }) center center no-repeat, rgb(255, 255, 255);">
          
               <div class="card__top">    
                   <div class="card__value">${card.value}
                   </div>
-                  <img class="card__suit" src="./cards/${
+                  <img class="card__suit" src="./dist/cards/${
                     suitsBackground[card.suit]
                   }" alt="suit">
               </div>
-              <img src="./cards/${
-                suitsBackground[card.suit]
-              }" alt="suit" class="suit_big">
+              
               <div class="card__bottom">    
                   <div class="card__value">${card.value}
                   </div>
-                  <img class="card__suit" src="./cards/${
+                  <img class="card__suit" src="./dist/cards/${
                     suitsBackground[card.suit]
                   }" alt="suit">
               </div>
@@ -159,9 +141,9 @@ export const startGame = (difficult: string) => {
     gameSection.classList.add("popup");
 
     gameSection.innerHTML = `<div class="game-section-start__container">
-            <img class="timer_result-img" src="./cards/${
-              winner ? '"win.svg" alt="win"' : '"lose.svg" alt="lose"'
-            }"  >
+            <img class="timer_result-img" src="./dist/cards/${
+              winner ? 'win.svg" alt="win"' : 'lose.svg" alt="lose"'
+            }  >
             
             <h2 class="game-menu_result-title">${
               winner ? "Вы выиграли" : "Вы проиграли"

@@ -1,5 +1,5 @@
 import { ICardType } from "./game";
-const SUIT = ["♠", "♣", "♥", "♦"];
+const SUIT = ["♦","♠", "♣", "♥"];
 const VALUES = ["A", "K", "Q", "J", "10", "9", "8", "7", "6"];
 export default class Deck {
   cards: Card[];
