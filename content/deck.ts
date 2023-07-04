@@ -1,6 +1,7 @@
 import { ICardType } from "./game";
-const SUIT = ["♦","♠", "♣", "♥"];
+const SUIT = ["♥", "♦", "♠", "♣"];
 const VALUES = ["A", "K", "Q", "J", "10", "9", "8", "7", "6"];
+
 export default class Deck {
   cards: Card[];
   constructor(cards = freshDeck()) {
@@ -26,9 +27,10 @@ class Card {
     this.value = value;
   }
 }
+
 function freshDeck() {
-  return SUIT.flatMap((suit) => {
-    return VALUES.map((value) => {
+  return VALUES.flatMap((value) => {
+    return SUIT.map((suit) => {
       return new Card(suit, value);
     });
   });

@@ -21,7 +21,7 @@ export const startGame = (difficult: string) => {
   const suitsBackground: suitsBackgroundType = {
     "♠": "pik.svg",
     "♣": "krest.svg",
-    "♥": "che.svg", 
+    "♥": "che.svg",
     "♦": "bub.svg",
   };
 
@@ -92,7 +92,7 @@ export const startGame = (difficult: string) => {
   restartBTn.addEventListener("click", () => {
     startGame(difficult);
   });
- 
+
   // Скрытие карт
   function closecards() {
     const cards: NodeListOf<HTMLElement> =
